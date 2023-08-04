@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Capstone Project IAM </title>
+    <link rel="icon" type="image/x-icon" href="images/spider.png">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+    <style>
+        body {
+            background-color: powderblue;
+            max-width: 1600px; 
+	        margin: 0 auto !important; 
+	        float: none !important; 
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Identity and Access Management Combining Role-Based Access Control and Attribute-Based Access Control</h1>
+    <h2>Motivation</h2>
+    <p>With the fast development of information technology, especially with the recent rapid development of cloud
+        computing, a lot of companies are moving their data from the physical media into the digital media.
+        Although the digital transition greatly improved the efficiency, it also brings cybersecurity concerns that the
+        digital data can be accessed where they shouldn't be accessed.
+        Identity and Access Management (IAM), or in other words, authentication, and authorization, plays an important
+        role in the cybersecurity world by making sure the identify can be safely verified
+        and their access to certain documents can be correctly checked.
+    </p>
+    <h2>Proposed Work</h2>
+    <p>In this work, I will implement an IAM system for authentication and authorization. The identify management system
+        should store user's password securely and be able to allow valid login and deny invalid login.
+        I will also implement the access control module such that it is very flexible that it can easily be applied to
+        situations where RBAC is required, ABAC is required, or a hybrid of RBAC and ABAC is required. In the RBAC part,
+        users will be grouped into roles, and roles will be granted to permissions. In the ABAC part, permissions will
+        be assigned based on attributes from users and objects. The hybrid of RBAC and ABAC would be that users need to
+        be assigned for some role and satisfy the attribute requirement as well.
+        When the system is developed, I will implement an example application to show that it works well.
+    </p>
+    <h2>Poster Presentation</h2>
+    <img src="images/poster.jpg" alt="poster" width="1600">
+    <h2>References</h2>
+    <ul>
+        <li><a href="docs/report_anonymous.pdf">Final report</li>
+        <li><a href="docs/raw_data.pdf">Raw data</a></li>
+        <li><a href="https://github.com/universalstarr/IAM/tree/main/code">Code</a></li>
+    </ul>
+
+</body>
+
+</html>
