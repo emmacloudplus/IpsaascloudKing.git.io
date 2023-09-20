@@ -20,7 +20,7 @@
 
   // what texure are you using
   // valid values = "globe", "myimage" or "proc"
-  let curTexture = "globe";
+  let curTexture = "proc";
 
   var anglesReset = [30.0, 30.0, 0.0];
   var cube_angles = [30.0, 30.0, 0.0];
