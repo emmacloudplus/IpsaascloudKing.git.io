@@ -20,7 +20,7 @@
 
   // what texure are you using
   // valid values = "globe", "myimage" or "proc"
-  let curTexture = "proc";
+  let curTexture = "globe";
 
   var anglesReset = [30.0, 30.0, 0.0];
   var cube_angles = [30.0, 30.0, 0.0];
@@ -337,6 +337,8 @@ function bindVAO (shape, program) {
     
     // set up your textures
     setUpTextures();
+
+    setTimeout(()=>{draw();}, 3000);
     
     // do a draw
     draw();
