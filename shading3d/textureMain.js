@@ -44,6 +44,8 @@ function setUpTextures() {
     // load the actual image
     var worldImage = document.getElementById('world-texture')
     worldImage.crossOrigin = "";
+    // var worldImage = new Image();
+    // worldImage.src="1_earth_16k.jpg";
 
     worldImage.onload = () => {
         // bind the texture so we can perform operations on it
@@ -57,6 +59,7 @@ function setUpTextures() {
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
     };
+    
 
     myImageTexture = gl.createTexture();
     gl.bindTexture(gl.TEXTURE_2D, myImageTexture);
@@ -64,6 +67,8 @@ function setUpTextures() {
     // load the actual image
     var myImage = document.getElementById('myimage-texture')
     myImage.crossOrigin = "";
+    // var myImage = new Image();
+    // myImage.src="myimage.jpg";
 
     myImage.onload = () => {
         // bind the texture so we can perform operations on it
@@ -77,6 +82,7 @@ function setUpTextures() {
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
         gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
     };
+    
 
 }
 
